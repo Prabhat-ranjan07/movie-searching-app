@@ -15,7 +15,7 @@ function Movie() {
       if (!movie) return;
 
       const response = await fetch(
-        `http://www.omdbapi.com/?t=${movie}&apikey=8259a81f`,
+        `https://www.omdbapi.com/?t=${movie}&apikey=8259a81f`,
       );
       const result = await response.json();
       setData(result);
